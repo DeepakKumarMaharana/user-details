@@ -19,12 +19,13 @@ import com.user.User_Details.Service.UserService;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
+	
 	@Autowired
 	private UserService userService;
 	
 	@GetMapping
 	List<User>getAlluser(){
-		return userService.getAll();
+		return userService.getAllUser();
 	}
 	@PostMapping
 	public User createUser(@RequestBody User user) {

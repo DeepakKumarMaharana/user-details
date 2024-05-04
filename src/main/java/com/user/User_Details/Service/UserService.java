@@ -6,7 +6,7 @@ import com.user.User_Details.Entity.User;
 
 public interface UserService {
 	
-	List<User>getAll();
+	List<User>getAllUser();
 	User getById(Long id);
 	User createUser(User user);
 	User updateUser (Long id, User updatedUser);
